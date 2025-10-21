@@ -4,7 +4,7 @@
   "description": "String analyzer backend service",
   "main": "server.ts",
   "scripts": {
-    "start": "node src/server.ts",
+  "start": "node dist/server.js",
     "dev": "ts-node-dev --respawn --pretty --transpile-only src/server.ts",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
