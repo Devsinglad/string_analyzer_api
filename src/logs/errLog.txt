@@ -1,0 +1,158 @@
+20251020	23:48:16	29e89db8-050f-4a7a-8821-70da5a2e569a	TypeError: Cannot read properties of undefined (reading 'findUnique')
+20251020	23:49:02	c40473f2-b8e0-4b27-a047-5327341eece4	TypeError: Cannot read properties of undefined (reading 'findUnique')
+20251020	23:50:36	168245db-9550-40b9-b343-d5938df4a139	TypeError: Cannot read properties of undefined (reading 'findFirst')
+20251020	23:51:12	5a82b8c9-3f80-4826-976b-7ef5ee2ac347	TypeError: Cannot read properties of undefined (reading 'findFirst')
+20251020	23:52:18	a8eeb829-a511-43c2-87d2-8fe6b1eca8e9	TypeError: Cannot read properties of undefined (reading 'findFirst')
+20251020	23:59:43	0059b7b4-a29c-457d-b47f-fd82647dea95	NotFoundError: Route does not exist
+20251021	00:04:20	b787e1b9-2b05-4ef5-b6c3-ff32c9e2733c	TypeError: Cannot read properties of null (reading 'id')
+20251021	00:04:28	f2892672-7092-429d-8c7d-048550dd38af	TypeError: Cannot read properties of null (reading 'id')
+20251021	00:11:39	e1c1fa19-a796-4781-899b-f134b3684bf6	NotFoundError: Route does not exist
+20251021	00:14:30	c19fd53d-b428-4163-b761-f6b26e0ba0ba	NotFoundError: Route does not exist
+20251021	00:15:11	47281dfc-be67-4fcd-8429-620a17ccc5a2	NotFoundError: Route does not exist
+20251021	00:33:51	0a04794e-b108-4840-bfcb-30b9b1a15f59	NotFoundError: Route does not exist
+20251021	00:34:04	409902c3-bcea-428e-9017-be7bb6fee0fd	NotFoundError: Route does not exist
+20251021	00:40:50	4891057b-2cba-4095-bfcc-c62078b358df	PrismaClientValidationError: 
+Invalid `prisma.postAnalyzedString.findMany()` invocation in
+/Users/theoneglobal/hngProject/backend-wizards-stage1/src/controllers/analyzeStringController.ts:147:75
+
+  144     };
+  145 }
+  146 
+→ 147 const strings: AnalyzedString[] = await prisma.postAnalyzedString.findMany({
+        where: {
+          properties.is_palindrome: true,
+          ~~~~~~~~~~~~~~~~~~~~~~~~
+      ?   AND?: PostAnalyzedStringWhereInput | PostAnalyzedStringWhereInput[],
+      ?   OR?: PostAnalyzedStringWhereInput[],
+      ?   NOT?: PostAnalyzedStringWhereInput | PostAnalyzedStringWhereInput[],
+      ?   id?: StringFilter | String,
+      ?   value?: StringFilter | String,
+      ?   length?: IntFilter | Int,
+      ?   is_palindrome?: BoolFilter | Boolean,
+      ?   unique_characters?: IntFilter | Int,
+      ?   word_count?: IntFilter | Int,
+      ?   sha256_hash?: StringFilter | String,
+      ?   character_frequency_map?: JsonFilter,
+      ?   created_at?: DateTimeFilter | DateTime,
+      ?   updated_at?: DateTimeFilter | DateTime
+        },
+        orderBy: {
+          created_at: "desc"
+        }
+      })
+
+Unknown argument `properties.is_palindrome`. Available options are marked with ?.
+20251021	00:40:55	e7867158-cd07-4f62-ace5-538958e5698a	PrismaClientValidationError: 
+Invalid `prisma.postAnalyzedString.findMany()` invocation in
+/Users/theoneglobal/hngProject/backend-wizards-stage1/src/controllers/analyzeStringController.ts:147:75
+
+  144     };
+  145 }
+  146 
+→ 147 const strings: AnalyzedString[] = await prisma.postAnalyzedString.findMany({
+        where: {
+          properties.is_palindrome: false,
+          ~~~~~~~~~~~~~~~~~~~~~~~~
+      ?   AND?: PostAnalyzedStringWhereInput | PostAnalyzedStringWhereInput[],
+      ?   OR?: PostAnalyzedStringWhereInput[],
+      ?   NOT?: PostAnalyzedStringWhereInput | PostAnalyzedStringWhereInput[],
+      ?   id?: StringFilter | String,
+      ?   value?: StringFilter | String,
+      ?   length?: IntFilter | Int,
+      ?   is_palindrome?: BoolFilter | Boolean,
+      ?   unique_characters?: IntFilter | Int,
+      ?   word_count?: IntFilter | Int,
+      ?   sha256_hash?: StringFilter | String,
+      ?   character_frequency_map?: JsonFilter,
+      ?   created_at?: DateTimeFilter | DateTime,
+      ?   updated_at?: DateTimeFilter | DateTime
+        },
+        orderBy: {
+          created_at: "desc"
+        }
+      })
+
+Unknown argument `properties.is_palindrome`. Available options are marked with ?.
+20251021	00:41:14	1a9217d5-289a-4c4c-be93-a55b9ee8bb65	PrismaClientValidationError: 
+Invalid `prisma.postAnalyzedString.findMany()` invocation in
+/Users/theoneglobal/hngProject/backend-wizards-stage1/src/controllers/analyzeStringController.ts:147:75
+
+  144     };
+  145 }
+  146 
+→ 147 const strings: AnalyzedString[] = await prisma.postAnalyzedString.findMany({
+        where: {
+          properties.is_palindrome: false,
+          ~~~~~~~~~~~~~~~~~~~~~~~~
+      ?   AND?: PostAnalyzedStringWhereInput | PostAnalyzedStringWhereInput[],
+      ?   OR?: PostAnalyzedStringWhereInput[],
+      ?   NOT?: PostAnalyzedStringWhereInput | PostAnalyzedStringWhereInput[],
+      ?   id?: StringFilter | String,
+      ?   value?: StringFilter | String,
+      ?   length?: IntFilter | Int,
+      ?   is_palindrome?: BoolFilter | Boolean,
+      ?   unique_characters?: IntFilter | Int,
+      ?   word_count?: IntFilter | Int,
+      ?   sha256_hash?: StringFilter | String,
+      ?   character_frequency_map?: JsonFilter,
+      ?   created_at?: DateTimeFilter | DateTime,
+      ?   updated_at?: DateTimeFilter | DateTime
+        },
+        orderBy: {
+          created_at: "desc"
+        }
+      })
+
+Unknown argument `properties.is_palindrome`. Available options are marked with ?.
+20251021	00:41:50	7b0b24c9-f1b1-4d85-9e5e-b866b5047f91	PrismaClientValidationError: 
+Invalid `prisma.postAnalyzedString.findMany()` invocation in
+/Users/theoneglobal/hngProject/backend-wizards-stage1/src/controllers/analyzeStringController.ts:147:75
+
+  144     };
+  145 }
+  146 
+→ 147 const strings: AnalyzedString[] = await prisma.postAnalyzedString.findMany({
+        where: {
+          properties.is_palindrome: false,
+          ~~~~~~~~~~~~~~~~~~~~~~~~
+      ?   AND?: PostAnalyzedStringWhereInput | PostAnalyzedStringWhereInput[],
+      ?   OR?: PostAnalyzedStringWhereInput[],
+      ?   NOT?: PostAnalyzedStringWhereInput | PostAnalyzedStringWhereInput[],
+      ?   id?: StringFilter | String,
+      ?   value?: StringFilter | String,
+      ?   length?: IntFilter | Int,
+      ?   is_palindrome?: BoolFilter | Boolean,
+      ?   unique_characters?: IntFilter | Int,
+      ?   word_count?: IntFilter | Int,
+      ?   sha256_hash?: StringFilter | String,
+      ?   character_frequency_map?: JsonFilter,
+      ?   created_at?: DateTimeFilter | DateTime,
+      ?   updated_at?: DateTimeFilter | DateTime
+        },
+        orderBy: {
+          created_at: "desc"
+        }
+      })
+
+Unknown argument `properties.is_palindrome`. Available options are marked with ?.
+20251021	00:47:22	0ca7890c-a934-4d09-a137-19bda6cd6929	TypeError: Cannot read properties of undefined (reading 'length')
+20251021	00:48:23	74e4e699-25cc-476d-9e7e-4e890852c81e	TypeError: Cannot read properties of undefined (reading 'is_palindrome')
+20251021	02:24:07	95882b50-a927-4728-8d7b-29b52171a77d	NotFoundError: Route does not exist
+20251021	02:26:52	b6b4f00f-dd36-4f97-bcda-648630d7a989	NotFoundError: Route does not exist
+20251021	02:27:13	4e7ac644-6c9a-4d50-8d6f-14c1057975de	NotFoundError: Route does not exist
+20251021	02:28:15	c6dcc9e8-34fb-4d1c-b8ae-295d4e87eb84	NotFoundError: Route does not exist
+20251021	02:29:11	4f4c3428-e456-4571-afe5-e13628dc903e	NotFoundError: Route does not exist
+20251021	02:30:33	9d80cd9e-2bbf-4e9d-b4ad-40660664c0c4	NotFoundError: Route does not exist
+20251021	02:30:37	ba56abd6-5d4b-4fe3-b22b-c98615344077	NotFoundError: Route does not exist
+20251021	02:31:07	5502f9de-5bbf-45ca-91f9-1d3ed1976204	NotFoundError: Route does not exist
+20251021	02:31:26	28394157-8181-491d-a1ad-1c46513bca13	NotFoundError: Route does not exist
+20251021	02:32:15	5b8df8fd-5ad1-4221-b7e8-79966392cdc3	TypeError: prisma.postAnalyzedString.Delete is not a function
+20251021	02:33:13	dd58c817-5c03-4ec4-92ab-4e759da59757	PrismaClientKnownRequestError: 
+Invalid `prisma.postAnalyzedString.delete()` invocation in
+/Users/theoneglobal/hngProject/backend-wizards-stage1/src/controllers/analyzeStringController.ts:242:47
+
+  239 
+  240 try {
+  241 
+→ 242     await prisma.postAnalyzedString.delete(
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
