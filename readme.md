@@ -74,10 +74,8 @@ npm install
 Create a `.env` file in the root directory:
 
 ```env
-# For SQLite
-DATABASE_URL="file:./dev.db"
 
-# Or for PostgreSQL
+#  PostgreSQL
 # DATABASE_URL="postgresql://user:password@localhost:5432/stringdb"
 
 PORT=3000
