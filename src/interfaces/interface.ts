@@ -1,4 +1,4 @@
-
+import type { JsonValue } from '@prisma/client/runtime/library';
 
 export interface HttpError extends Error {
     status: number;
@@ -13,12 +13,10 @@ export interface AnalyzedString {
         unique_characters: number;
         word_count: number;
         sha256_hash: string;
-        character_frequency_map: Record<string, number> | null;
+        character_frequency_map: JsonValue;
     };
-    created_at: Date;
+    created_at: string; // Changed from Date to string since you're using toISOString()
 }
-
-
 
 export interface AllAnalyzedString {
     id: string;
@@ -28,10 +26,9 @@ export interface AllAnalyzedString {
     unique_characters: number;
     word_count: number;
     sha256_hash: string;
-    character_frequency_map: Record<string, number> | null;
+    character_frequency_map: JsonValue; // Use JsonValue from runtime/library
     created_at: Date;
 }
-
 
 export interface GetAnalyzeStringsRes {
     data: AnalyzedString[];

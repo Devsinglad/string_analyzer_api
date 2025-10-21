@@ -98,7 +98,7 @@ export const getStringByValue = async (req: Request, res: Response, next: NextFu
                 sha256_hash: string.sha256_hash,
                 character_frequency_map: string.character_frequency_map,
             },
-            created_at: string.created_at,
+            created_at: string.created_at.toISOString(),
         };
 
         return res.status(200).json(response);
@@ -149,7 +149,7 @@ export const getAllStrings = async (
         });
 
         const response: GetAnalyzeStringsRes = {
-            data: strings.map(value => ({
+            data: strings.map((value): AnalyzedString => ({
                 id: value.id,
                 value: value.value,
                 properties: {
@@ -160,7 +160,7 @@ export const getAllStrings = async (
                     sha256_hash: value.sha256_hash,
                     character_frequency_map: value.character_frequency_map,
                 },
-                created_at: value.created_at,
+                created_at: value.created_at.toISOString(),
             })),
             count: strings.length,
             filters_applied: {

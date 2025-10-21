@@ -130,3 +130,9 @@
 20251021	09:08:29	6b5b965e-e95e-4e97-9026-3ddfc11650a1	GET	undefined	/strings/kayak
 20251021	09:12:33	2dc4b5d1-a8fd-4cf7-b09a-757ec37923ac	GET	undefined	/strings/filter-by-natural-language?query=all%20single%20word%20palindromic%20strings
 20251021	09:12:44	36f6dec9-3416-4867-85b7-7a0b17da7e4f	GET	undefined	/strings/filter-by-natural-language?query=strings%20longer%20than%205%20characters
+20251021	09:45:14	958b4861-663a-4d18-a256-874fc6ced657	GET	undefined	/strings?is_palindrome=true
+20251021	09:45:37	d37933ae-0854-4428-94d2-f4e9f2812a83	GET	undefined	/strings/kayak
+20251021	09:56:56	4fa2a87b-72bc-4c09-b0b9-541d1189f3ca	GET	undefined	/strings/kayak
+20251021	09:57:00	37ccaf0e-aa5b-4f7c-bd03-e0a077cd8822	GET	undefined	/strings?is_palindrome=true
+20251021	09:57:04	7f2105bb-aeaf-4575-8c0c-a59b41bc1c37	GET	undefined	/strings?is_palindrome=true&min_length=9
+20251021	09:57:17	080caf05-1f74-4ed4-bb78-038a2a7a5ec4	GET	undefined	/strings/filter-by-natural-language?query=strings%20longer%20than%205%20characters

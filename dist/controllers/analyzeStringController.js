@@ -96,7 +96,7 @@ const getStringByValue = (req, res, next) => __awaiter(void 0, void 0, void 0, f
                 sha256_hash: string.sha256_hash,
                 character_frequency_map: string.character_frequency_map,
             },
-            created_at: string.created_at,
+            created_at: string.created_at.toISOString(),
         };
         return res.status(200).json(response);
     }
@@ -139,7 +139,7 @@ const getAllStrings = (req, res, next) => __awaiter(void 0, void 0, void 0, func
             orderBy: { created_at: 'desc' },
         });
         const response = {
-            data: strings.map(value => ({
+            data: strings.map((value) => ({
                 id: value.id,
                 value: value.value,
                 properties: {
@@ -150,7 +150,7 @@ const getAllStrings = (req, res, next) => __awaiter(void 0, void 0, void 0, func
                     sha256_hash: value.sha256_hash,
                     character_frequency_map: value.character_frequency_map,
                 },
-                created_at: value.created_at,
+                created_at: value.created_at.toISOString(),
             })),
             count: strings.length,
             filters_applied: {
